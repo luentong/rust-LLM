@@ -1,0 +1,15 @@
+[package]
+name = "rust-llm-simple"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# 使用可用的版本
+candle-core = "0.9.2-alpha.2"
+candle-nn = "0.9.2-alpha.2"
+anyhow = "1.0.75"
+
+# 添加这些版本限制来解决 rand 冲突
+rand = "=0.8.5"
+rand_distr = "=0.4.3"
+half = "=2.4.0"
